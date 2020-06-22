@@ -102,9 +102,9 @@ Let's make the froggy jump to a different location when you double click on it.
 
 You may notice at times the froggy appears outside of the page. We can use a bit of math to prevent this from happening.
 
-1. After your calculation for the random `top` property for the `froggy` CSS class - subtract the height of the `froggy` CSS class. You can get the height of the `froggy` CSS class with the property `clientHeight`.
+1. Subtract the height of the `froggy` CSS class from the `document.body.clientHeight` - so your height range is limited, and the froggy will not appear off the screen. You can get the height of the `froggy` CSS class with the property `clientHeight`.
 
-2. After your calculation for the random `left` property for the `froggy` CSS class - subtract the width of the `froggy` CSS class. You can get the width of the `froggy` CSS class with the property `clientWidth`.
+2. Subtract the width of the `froggy` CSS class from the `document.body.clientWidth` - so your width range is limited, and the froggy will not appear off the screen. You can get the width of the `froggy` CSS class with the property `clientWidth`.
 
 ### Assignment 7 - Right click froggy
 

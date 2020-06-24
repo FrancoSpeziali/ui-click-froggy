@@ -114,7 +114,7 @@ Let's change the information which appears when you right-click on the froggy.
 
 2. In your callback for the "contextmenu" event, run the `preventDefault()` method on the event object.
 
-3. Also in your callback for the "click" event, modify the `froggy-contextmenu` CSS class so that the property `display: none` becomes `display: block` for 1000ms
+3. Also in your callback for the "contextmenu" event, modify the `froggy-contextmenu` CSS class so that the property `display: none` becomes `display: block` for 1000ms
 
 > Hint: Again you will have to use `setTimeout` here to set the property back to `display: none` to hide it again
 

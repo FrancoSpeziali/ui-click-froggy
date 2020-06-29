@@ -74,7 +74,7 @@ We need somewhere to store our JavaScript
 
 Now we can see our frog, let's make the frog interactive!
 
-1. Add an event listener on the `froggy-sprite` CSS class which listens for a mouse "click" event
+1. Add an event listener on the `froggy-sprite` CSS class which listens for a mouse `click` event
 
 2. In your callback for the "click" event, modify the `froggy-speak` CSS class so that the property `visibility: hidden` becomes `visibility: visible` for 200ms
 
@@ -88,11 +88,11 @@ Research: [EventTarget.addEventListener() [Deutsch]](https://developer.mozilla.o
 
 Let's make the froggy jump to a different location when you double click on it.
 
-1. Add an event listener on the `froggy-sprite` CSS class which listens for a mouse "dblclick" event
+1. Add an event listener on the `froggy-sprite` CSS class which listens for a mouse `dblclick` event
 
-2. Create a function called "froggyJump" which changes the `top` and `left` properties of the `froggy` CSS class to a random value from 0 to the height / width of the page
+2. Outside of the listener create a new function called "froggyJump" which changes the `top` and `left` properties of the `froggy` CSS class to a random value from 0 to the height / width of the page
 
-3. In your callback for the "dblclick" event, reference the function "froggyJump" you created in the step above
+3. In your callback for the `dblclick` event, call the function "froggyJump"
 
 > Hint: Use `Math.random()` to randomly pick a number
 
